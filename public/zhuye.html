@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+        /* 导航*/
+        input{
+            width: 400px;
+            height: 40px;
+            margin-left: 90px;
+        }
+        .tubiao{
+            width:40px;
+            height:40px;
+            font-size: 12px;
+            margin-left:-4px;
+        }
+
+        ul{
+            height: 40px;
+            font-size: 20px;
+        }
+        li{
+            float:left;
+        }
+        a{
+            text-decoration:none;
+            color: white;
+        }
+        /*轮播图*/
+        .lunbo{
+            width:1110px;
+            height:550px;
+        }
+        .t1{
+            width: 100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 导航栏-->
+      <div class="bg-secondary text-white">
+          <img src="logo_top.png"/>
+          <span>机车是一种，生活态度、自由、激情、无拘束</span>
+          <input type="text"/>
+            <button class="tubiao btn-danger">搜索</button>
+      </div>
+      <div class="row mx-0">
+          <ul class="list-unstyled  bg-dark d-flex justify-content-around w-100  px-0 mb-0">
+              <li><a href="">首页</a></li>
+              <li><a href="">品牌车型</a></li>
+              <li><a href="">维修保养</a></li>
+              <li><a href="">改装欣赏</a></li>
+              <li><a href="">驾驶技巧</a></li>
+              <li><a href="">人物故事</a></li>
+          </ul>
+      </div>
+    <!-- 轮播图-->
+      <div class="lunbo">
+          <img src="1.jpg" alt="" class="t1"/>
+      </div>
+</div>
+</body>
+</html>
