@@ -1,0 +1,19 @@
+/*设置header和footer的宽高*/
+.my_header,.my_footer{
+    width: 100%;
+}
+@media screen and (min-width: 992px) {
+    .my_header{
+        height: 8rem;
+    }
+    .my_footer{
+        height: 20rem;
+    }
+}@media screen and (max-width:991px) {
+    .my_header{
+        height: 15rem;
+    }
+    .my_footer{
+        height: 40rem;
+    }
+}
