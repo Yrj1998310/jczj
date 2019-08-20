@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	    function  regUser(){
+			//收集整理数据
+						var $uname=uname.value;
+						var $upwd=upwd.value;
+						var $phone=phone.value;
+						var $email=email.value;
+						var $user_name=user_name.value;
+									if($uname==""){
+									 alert("用户名不能为空");
+									}
+									if($upwd==""){
+									alert("用户密码不能为空");
+									}
+									if($phone==""){
+									 alert("电话不能为空");
+									}
+									if($email==""){
+									 alert("电子邮箱不能为空");
+									}
+									if($user_name==""){
+									   alert("真实姓名不能为空");
+									}
+									//1.创建xhr异步对象
+									var xhr=new XMLHttpRequest();
+									 //4.绑定监听，获取响应
+									 xhr.onreadystatechange=function(){
+										if(xhr.readyState==4&&xhr.status==200){
+										 var result=xhr.responseText;
+
+
+						}
+					}
+									  //2.打开链接，创建请求
+										xhr.open("post","/user/reg",true);
+										//创建请求主体，把数据放到请求主体中
+												var formdata=`uname=${$uname}&upwd=${$upwd}&email=${$email}&phone=${$phone}&user_name=${$user_name}`;
+												console.log(formdata);
+										//由于要传递整个请求主体
+										//而请求主题有特殊字符，必须修改请求头
+												xhr.setRequestHeader("Content-Type","applic ation/x-www-form-urlencoded");
+										 //3.发送请求
+										 xhr.send(formdata);
+			 }
+	</script>
+</head>
+<body>
+	登录名称： <input type="text" id="uname"><br>	
+	登录密码： <input type="text" id="upwd"><br>	
+	电子邮箱： <input type="text" id="email"><br>	
+	联系方式： <input type="text" id="phone"><br>	
+	真实姓名： <input type="text" id="user_name"><br>	
+	<button onclick="regUser">注册</button>
+</body>
+</html>

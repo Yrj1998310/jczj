@@ -1,0 +1,262 @@
+
+        /*轮播图*/
+        #lunbo{
+            width:1583px;
+            height:700px;
+        }
+        .q1{
+            width:1583px;
+            height:700px;
+        }
+        .carousel-control-prev,
+        .carousel-control-next{
+            width:4%;
+            height:20%;
+            background-color:#666;
+            border-radius: 0.5rem;
+            top:40%;
+        }
+        .carousel-indicators li{
+            width: 1rem;
+            height: 1rem;
+            background-color:white;
+            margin-right: 0.4rem;
+            margin-left: 0.4rem;
+            border-radius:50%;
+        }
+        .carousel-indicators .active{
+            background-color:#666;
+        }
+        .x1{
+            background-image:url(../img/bj.jpg);
+            width: 1583px;
+            height:1860px;
+            background-repeat:repeat-y;
+        }
+        /*上1*/
+        .bj{
+            background: rgba(0,0,0,.2)
+        }
+        .s1{
+            width:1110px;
+            height:620px;
+        }
+        .cm{
+            width:200px;
+            height:40px;
+            text-align: center;
+            line-height:40px;
+            margin-left:40px;
+            color: white;
+        }
+        .tu1{
+            width:370px;
+            height:290px;
+        }
+        .jpg2,.jpg3{
+            width: 350px;
+            height: 210px;
+
+        }
+        .jpg3{
+            display: none;
+        }
+        .tu1>a:hover>.jpg2{
+             display: none;
+         }
+        .tu1>a:hover>.jpg3{
+            display: block;
+        }
+        .jpg4,.jpg5{
+            width: 350px;
+            height: 210px;
+
+        }
+        .jpg5{
+            display: none;
+        }
+        .tu1>a:hover>.jpg4{
+            display: none;
+        }
+        .tu1>a:hover>.jpg5{
+            display: block;
+        }
+        .jpg6,.jpg7{
+            width: 350px;
+            height: 210px;
+
+        }
+        .jpg7{
+            display: none;
+        }
+        .tu1>a:hover>.jpg6{
+            display: none;
+        }
+        .tu1>a:hover>.jpg7{
+            display: block;
+        }
+        .jpg8,.jpg9{
+            width: 350px;
+            height: 210px;
+
+        }
+        .jpg9{
+            display: none;
+        }
+        .tu1>a:hover>.jpg8{
+            display: none;
+        }
+        .tu1>a:hover>.jpg9{
+            display: block;
+        }
+        .jpg10,.jpg11{
+            width: 350px;
+            height: 210px;
+            
+        }
+        .jpg11{
+            display: none;
+        }
+        .tu1>a:hover>.jpg10{
+            display: none;
+        }
+        .tu1>a:hover>.jpg11{
+            display: block;
+            
+        }
+        .jpg12,.jpg13{
+            width: 350px;
+            height: 210px;
+
+        }
+        .jpg13{
+            display: none;
+        }
+        .tu1>a:hover>.jpg12{
+            display: none;
+        }
+        .tu1>a:hover>.jpg13{
+            display: block;
+        }
+        a{
+            color: white;
+        }
+        header{
+            height: 128px;
+        }
+        /* 信仰 */
+        .f1{
+            margin-left:575px;
+        }
+        h2{
+            font-size:50px;
+        }
+        hr{
+            width:200px;
+            height:5px;
+            background:#FBCC0A;
+            margin-left:-50px;
+        }
+        b{
+            font-size:30px;
+            font-weight: normal;
+            font-style:italic;
+        }
+        .f2{
+            width:1170px;
+            height:360px;
+            
+        }
+        .fw{
+            width:120px;
+            height:120px;
+            background:#f6bf01;
+            padding-top:30px;
+            border-radius:50%;
+            display:inline-block;
+            margin-left:174px;
+        }
+        .fwt{
+            margin-left:30px;
+        }
+        .jcyl{
+            margin-left: 120px;
+        }
+        h3{
+            font-weight: bold;
+        }
+        .btn-2{
+            padding:10px 20px;
+            background-color:white;
+            border:2px solid #FBCC0A;
+            border-radius:22px;
+            font-size:18px;
+            font-weight:bold;
+            margin-left: 187px;
+        }
+   /*投资组合*/
+   .tzzh{
+       width:1583PX;
+       height:1000PX;
+       background:#E7E7E7;
+   }
+   .tzf2{
+        margin-left:510px;
+   }
+   .fgx{
+    width:200px;
+    height:5px;
+    background:black;
+    margin-left:-50px;
+   }
+   .c1{
+       width: 260px;
+       height: 175px;
+   }
+   .tzz{
+       width:260px;
+       padding:25px;
+       max-width:400px;
+       text-align:center;
+       color:white;
+       background-color:#FBCC0A;
+       border:1px solid transparent;
+   }
+   h4{
+       font-weight: bold;
+   }
+   .tzz:hover{
+       background-color:white;
+       color:#f6bf01;
+   }
+   /* 完美定价 */
+   .wmdj{
+    width:1583PX;
+    height:600PX;
+    background:white;
+   }
+   .dj{
+       background: #f6bf01;
+   }
+   .bg{
+       width:1170px;
+       height:217;
+       margin-left: -487px;
+   }
+   .bgheader{
+       background-color:#f6bf01;
+       color:black;
+       font-weight: bold;
+   }
+   .bgsz{
+       border:1px solid#E7E7E7;
+   }
+   td{
+       border-right:1px solid #E7E7E7; 
+       height:39px;
+   }
+   .bgsz:hover{
+        background:#f6bf01;
+        color:white;
+   }
+   
