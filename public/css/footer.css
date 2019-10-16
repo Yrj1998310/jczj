@@ -1,0 +1,31 @@
+
+ #jiao{   
+    width:100%;
+    height:300px;
+    background-color:rgb(0,0,0,.5) !important;
+}       
+#jiao .fp{
+    color: #fff;
+    margin-bottom: 0;
+    margin-left:50px;
+}
+#jiao .ful{
+    list-style: none;
+    padding: 0;
+}
+#jiao span{
+    color:white;
+}
+#jiao .fewm{
+    margin-left:120px;
+}
+#jiao .fbaibai{
+    width:300px;
+    height:300px;
+    float:left;
+    margin-left:110px;
+    margin-top:3px;
+}
+#jiao .fa{
+    color:black !important;
+}

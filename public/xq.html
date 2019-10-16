@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    p{
+      color:#AAAAAA;
+    }
+    h2{
+      color:white;
+    }
+    /* 一楼 */
+  #l1{
+    width:100%;
+    height:960px;
+    background:url(img/cq1.jpg);
+    position: relative;
+  }
+  .cqlogo{
+      width:590px;
+      height:527px;
+      position:absolute;
+      top:150px;
+      left:150px;
+  }
+  ul{
+    list-style: none;
+  }
+  .btn_box li {
+  margin-bottom: 5px;
+}
+.btn_box a {
+  position: relative;
+  display: block;
+  padding: 7px 45px 7px 16px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  font-family: ClanWeb-Medium, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.2rem;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-position: right 15px center;
+}
+.btn_box a:hover, .btn_box a.active {
+  border: 1px solid #fff;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.btn_box a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 0px solid #fff;
+  opacity: 0;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+.btn_box a:hover:before, .btn_box a.active:before {
+  border: 3px solid #fff;
+  opacity: 1;
+}
+  .xia1{
+    width:63px;
+    height:48px;
+    position:absolute;
+    bottom:30px;
+    left:800px;
+    text-align: center;
+    line-height: 48px;
+  }
+  .xia1:hover{
+    bottom:20px;
+    transition: 0.5s;
+  }
+  /* 二楼 */
+  #l2{
+    width:100%;
+    height:960px;
+    background: url(img/cq2.jpg);
+    position: relative;
+  }
+  .jishu{
+    width:360px;
+    height:436px;
+    position:absolute;
+    top:222px;
+    left:120px;
+  }
+  .xia2{
+    width:63px;
+    height:48px;
+    position:absolute;
+    bottom:30px;
+    left:800px;
+    text-align: center;
+    line-height: 48px;
+  }
+  .xia2:hover{
+    bottom:20px;
+    transition: 0.5s;
+  }
+  /* 三楼 */
+  #l3{
+    width:100%;
+    height:960px;
+    background-color:#000;
+    position: relative;
+  }
+  #l3:before {
+  content: '';
+  display: block;
+  padding-top: 60%;
+}
+  #l3 .tupian{
+    position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 90%;
+  height: 410px;
+  }
+  #l3 .photoMenu {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#l3 .photoMenu li {
+  margin: 10px 0;
+}
+#l3 .photoMenu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-family: ClanWeb-Medium, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: #7D7D7D;
+  background-position: left center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.photoMenu>li>a:hover{
+  color: #fff      !important;
+}     
+#l3 .photoLists {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 714px;
+  line-height: 0;
+}
+#l3 .photolist {
+  width: 714px;
+}
+#l3 .photolist ol{
+  margin:0;
+  padding:0;
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+#l3 .photolist li a {
+  position: relative;
+  display: block;
+}
+#l3 .photolist li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 0px solid #fff;
+  opacity: 0;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+#l3 .photolist li a:hover:before {
+  border: 5px solid #fff;
+  opacity: 1;
+}
+.xia3{
+  width:63px;
+    height:48px;
+    position:absolute;
+    bottom:30px;
+    left:800px;
+    text-align: center;
+    line-height: 48px;
+}
+.xia1:hover{
+    bottom:20px;
+    transition: 0.5s;
+  }
+/* 四楼 */
+#l4 {
+  background-color: #262626;
+  padding-bottom:1px;
+}
+#l4  .content {
+  padding: 100px;
+}
+
+#l4 .spec {
+  width: 680px;
+  margin: 75px auto 100px auto;
+  text-align: center;
+}
+#l4 .info {
+  width: 950px;
+  margin: 0 auto;
+  /* font-size: 10px;*/
+  /* font-size: 1rem;*/
+  font-size: 1.4rem;
+  color:white;
+}
+#l4 .info h3 {
+  
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+#l4 .info ul {
+  margin-left: 1.1em;
+  list-style: disc;
+}
+/* 五楼 */
+#l5{
+  width:100%;
+  height:200px;
+  background:#262626;
+}
+  </style>
+  <body>
+    <header id="tou"></header>
+    <!-- 一楼 -->
+<div id="l1">
+          <div class="cqlogo">
+            <img src="img/cqlogo.jpg">
+            <p>
+                作为以终极为设计理念的这一款Ninja H2R，被定位为一款专门用于赛道行驶的典范车型，它使得车手对街道自由驾驶的纯粹追求成为了可能，在性能上突破了街驾的局限性。借力于超过300马力的机械增压发动机，它足以提供叹为观止的加速度、难以置信的极速、超稳定的控制装置以及任何骑手都可以体验得到的超级感官享受。Ninja H2R是技术、品质、适应性乃至艺术的完美展示，超过迄今为止川崎制造的任何一款摩托车。它杰出的镜面喷漆技术是专为Ninja H2R开发的,新型钻石车架的焊接也秉承川崎一如既往的优雅流畅。此款车型设有专用生产区域,并由专业工匠纯手工组装, 以呈现独一无二的尊贵品质.
+            </p>
+            <ul class="btn_box">
+              <li>
+                <a href="javascript:;" style="cursor: pointer">品牌故事</a>
+              </li>
+              <li>
+                <a href="javascript:;" style="cursor: pointer">标识寓意</a>
+              </li>
+            </ul>
+          </div>
+          <div class="xia1 pao" style="cursor: pointer">
+            <img src="img/xia.gif">
+          </div>
+</div>
+<!-- 二楼 -->
+<div id="l2">
+        <div class="jishu">
+          <h2>技术</h2>
+          <p>为了实现创造终极摩托车的目标，川崎重工集团（KHI）旗下的其他公司也提供了相应的帮助，使公司间的合作达到一个前所未有的境界.</p>
+          <p>Ninja H2R是技术、品质、适应性乃至艺术的完美展示，超过迄今为止川崎制造的任何一款摩托车.</p>
+          <ul class="btn_box">
+            <li>
+              <a href="javascript:;" style="cursor: pointer">动力追求</a>
+            </li>
+            <li>
+              <a href="javascript:;" style="cursor: pointer">告诉稳定与灯光处理</a>
+            </li>
+            <li>
+              <a href="javascript:;" style="cursor: pointer">高速造型</a>
+            </li>
+            <li>
+              <a href="javascript:;" style="cursor: pointer">人机界面</a>
+            </li>
+            <li>
+              <a href="javascript:;" style="cursor: pointer">电子支持</a>
+            </li>
+          </ul>
+        </div>
+        <div class="xia2 pao" style="cursor: pointer">
+          <img src="img/xia.gif">
+        </div>
+</div>
+<!-- 三楼 -->
+<div id="l3">
+    <div class="tupian">
+      <h2>图片</h2>
+        <ul class="photoMenu">
+          <li><a href="javascript:;" style="cursor: pointer">样式</a></li>
+          <li><a href="javascript:;" style="cursor: pointer">细节</a></li>
+          <li><a href="javascript:;" style="cursor: pointer">零件</a></li>
+          <li><a href="javascript:;" style="cursor: pointer">功能</a></li>
+          <li><a href="javascript:;" style="cursor: pointer">计算机绘图图解</a></li>
+        </ul>
+        <div class="photoLists">
+         <div class="photolist">
+          <ol>
+            <li>
+              <a href="javascript:;" style="cursor: pointer"><img src="img/xcq1.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:;" style="cursor: pointer"><img src="img/xcq2.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:;" style="cursor: pointer"><img src="img/xcq3.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:;" style="cursor: pointer"><img src="img/xcq4.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:;" style="cursor: pointer"><img src="img/xcq5.jpg" alt=""></a>
+            </li>
+          </ol>
+         </div>
+        </div>
+    </div>
+        <div class="xia3 pao" style="cursor: pointer">
+          <img src="img/xia.gif" alt="">
+        </div>
+</div>
+<!-- 四楼 -->
+<div id="l4">
+    <div class="content">
+      <h2>说明书</h2>
+    </div>
+    <div class="spec">
+      <img src="img/sms.gif" alt="">
+    </div>
+    <div class="info">
+        <p>以上参数适用于在标准条件下已经生产出来的相关产品，且这些参数性能描述仅作参考，这些描述内容可能并不适用于每一台出售的相关产品。川崎重工业有限公司有权在不提前通知的情况下修改相关描述。相关产品的描述和参数可能为了满足不同的市场需求而有所不同，车辆的颜色也可能因各地不同市场环境而做改变。</p>
+        <h3>关于Ninja H2R系列的重要信息</h3>
+        <ul>
+          <li> Ninja H2R针对专业车手设计，不适用与普通骑手。</li>
+          <li> Ninja H2R不能在公共街道、道路和高速公路上驾驶。</li>
+          <li> Ninja H2R仅限在封闭式赛道驾驶。</li>
+          <li> 请遵守当地封闭式赛道的规章条例。</li>
+          <li> 除定期维护外，发动机以8000转/每分钟运行15小时后，需进行一次检查。这些服务时间间隔可通过车辆ECU并显示在多功能表上的服务信息进行监测。（详见说明书）</li>
+          <li>
+              Ninja H2R的排气声压级（停滞状态）是120分贝（A），并可以使用以下方法进行测量：
+              <br>
+              麦克风位置：距离车辆排气管50厘米（19.7英寸）并呈45度角，垂直于排气的中心线与排气管等高。
+              <br>
+              发动机转速：每分钟5500转（持续3秒后松开油门）
+              <br>
+              发动机冷却水温度：90°C（194F）
+              <br>
+              请提前确认当地封闭赛道的噪音条例。排气噪音的测量方法因各场地环境不同而异。
+          </li>
+          <li> 为了防止轮胎丧失抓地力，在驾驶Ninja H2R之前，必须使用暖胎器。冷胎抓地力不足可能导致车辆失控，引发碰撞，可能直接导致驾驶人员的受伤或死亡。</li>
+          <li>在存放Ninja H2R时，必须使用摩托车架，使前后轮胎均离开地面，以防止轮胎变形，避免对车辆性能产生不利的影响。 </li>
+          <li> 请不要在雨天驾驶Ninja H2R。 </li>
+          <li>轮胎标准如下，除此之外，不得将其它品牌和型号的轮胎使用在Ninja H2R上。
+              前轮胎：普利司通Racing Battlax V01F Soft
+              后轮胎：普利司通Racing Battlax V01R Medium
+              川崎摩托Ninja H2R车型不得使用普利司通Racing BattlaxV02F & V02R 型号的轮胎。
+                      </li>
+        </ul>
+    </div>
+</div>
+<!-- 五楼 -->
+<div id="l5"></div>
+    <footer id="jiao"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/xq.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    .da{
+        width:100%;
+        height:700px;
+        background-image: url("img/zdt.jpeg");
+        background-size:100% 1200px;
+        position:relative;
+    }
+    .zc{
+        width:400px;
+        height:500px;
+        position:absolute;
+        top:90px;
+        right:85px;
+        background:rgb(0,0,0,.2);
+    }
+    h3{
+        position:absolute;
+        left:90px;
+        color:red;
+    }
+    h5{
+        position:absolute;
+        top:40px;
+        left:150px;
+        color:black;
+    }
+    .phone{
+        width:320px;
+        height:42px;
+        position:absolute;
+        top:100px;
+        left:40px;
+        background:white;
+    }
+    .yzm{
+        width:320px;
+        height:42px;
+        position:absolute;
+        top:200px;
+        left:40px;
+        background:white;
+    }
+    .d{
+        width:96px;
+        height:40px;
+        background:#E9ECF0;
+        position:absolute;
+        top:1px;
+        right:0px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .word{
+        width:320px;
+        height:42px;
+        position:absolute;
+        top:300px;
+        left:40px;
+        background:white;
+    }
+    .k1{
+        position:absolute;
+        width:262px;
+        height:42px;
+        left:38px;
+        border:0;
+        outline:none;
+    }
+    .an{
+        width:320px;
+        height:42px;
+        border-radius: 24px;
+        position:absolute;
+        top:390px;
+        left:44px;
+        background:rgba(0, 0, 0,.3);
+        color:white;
+        border:0;
+        outline:none;
+    }
+    .yx{
+        position:absolute;
+        left:85px;
+        bottom:-5px;
+        color:white;
+    }
+    .yy{
+        position:absolute;
+        right:55px;
+        bottom:-5px;
+        color:white;
+    }
+    .x{
+        width:400px;
+        height:42px;
+        background:rgba(0, 0, 0,.3);
+        position:absolute;
+        bottom:0px;
+    }
+    .tu{
+        width:20px;
+        height:20px;
+        position:absolute;
+        top:10px;
+        left:10px;
+    }
+    #yzsb{
+        width:320px;
+        height:42px;
+        position:absolute;
+        top:150px;
+        left:40px;
+        color:red;
+    }
+    #yzmm{
+        width:320px;
+        height:42px;
+        position:absolute;
+        bottom:110px;
+        left:40px;
+        color:red;
+    }
+  </style>
+  <body>
+      <header id="tou"></header>
+      <div class="da">
+          <div class="zc">
+                    <h3>尊敬的骑士,你好!</h3>
+                    <h5>手机注册</h5>
+                <div class="phone">
+                    <img src="img/sj.png" class="tu">
+                    <input type="text" placeholder="请输入用户名"  class="k1" id="uname">
+                </div>
+                <div id="yzsb"></div>
+                <div class="yzm">
+                    <img src="img/yzm.png" class="tu">
+                    <input type="text"placeholder="请输入短信验证码" class="k1">
+                    <div class="d" id="yzm" >获取验证码</div>
+                </div>
+                <div class="word">
+                    <img src="img/mm.png" class="tu">
+                    <input type="password" placeholder="请输入密码" class="k1" id="pwd">
+                </div>
+                <div id="yzmm"></div>
+             <input id="btn" class="an" type="button" value="注册">
+              <div class="x">
+                  <p class="yx">邮箱注册</p>
+                  <p class="yy">已有账号，去登录</p>
+              </div>
+          </div>
+      </div>
+      <script>
+      $(function(){
+    var yzm_get=true;
+    $("#yzm").on("click",function(){
+        if(yzm_get){
+            yzm_get=false;
+            var sum=59;
+            $(this).text(`${sum}s后重试`)
+            var time=setInterval(()=>{
+                sum--;
+                $(this).text(`${sum}s后重试`).addClass("forbidden")
+            if(sum<1){
+                $(this).text("获取验证码").removeClass("forbidden")
+                clearInterval(time);
+                sum=59;
+                yzm_get=true;
+            }
+            },1000)  
+        }
+    })
+    $("#btn").on("click",function(){
+        var uname=$("#uname").val();
+        var upwd=$("#pwd").val();
+        var pwd_reg=/^\w{6,12}$/;
+        var uname_reg=/^[a-zA-Z0-9_-]{4,16}$/;
+        if(!uname_reg.test(uname)){
+            $("#yzsb").text("用户名格式不正确!");
+            return;
+        }
+        if(!pwd_reg.test(upwd)){
+            $("#yzmm").text("密码为6~12位数字或字母");
+            return;
+        }
+        $.ajax({ 
+            url:"http://127.0.0.1:8080/user ",
+            data:{
+                uname,
+                upwd
+            },
+            type:"post",
+            success:function(result){
+                if(result.code==1){
+                    alert("注册成功!")
+                    location.href="login.html"
+                }
+            }
+        })
+    })
+})
+      </script>
+          <footer id="jiao"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+  </html>
